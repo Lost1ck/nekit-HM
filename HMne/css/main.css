@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #0F0A29;
 }
 
 .container {
@@ -21,6 +22,7 @@ body {
 }
 
 .post {
+  position: relative;
   padding: 10px;
 }
 
@@ -38,23 +40,22 @@ img {
   height: 380px;
 }
 
-.search-panel {
+.search {
+  display: flex;
   margin: 0 auto;
-  width: auto;
-  border: 1px solid #000;
-  min-height: 20px;
-  display: relative;
+  width: 800px;
+  height: 30px;
+  left: 112px;
+  top: 44px;
+  margin-top: 10px;
+  align-items: center;
+  background: #FAFAFA;
 }
 
-input[type=search] {
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-}
-
-input[type=submit] {
-  display: absolute;
-  border: none;
+.search button {
+  width: 16px;
+  height: 16px;
+  background-image: url();
 }
 
 .main-text {
@@ -66,4 +67,24 @@ input[type=submit] {
   font-size: 12px;
   line-height: 14px;
   font-family: "Lobster", sans-serif;
+}
+
+.rating-mini {
+  font-size: 0;
+}
+.rating-mini span {
+  position: absolute;
+  margin: 10px 60px;
+  right: 0;
+  font-size: 20px;
+  line-height: 1;
+  color: lightgrey;
+}
+
+.rating-mini > span:before {
+  content: "★ 3.5";
+}
+
+.rating-mini > span.active {
+  color: gold;
 }/*# sourceMappingURL=main.css.map */

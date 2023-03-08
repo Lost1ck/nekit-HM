@@ -5,7 +5,7 @@
     box-sizing: border-box
 
 body
-    background-color: #E5E5E5
+    background-color: #0F0A29
 //main container
 .container
     max-width: 1140px
@@ -14,11 +14,12 @@ body
 
 //grid of the 6 elements
 .grid-container
-    display: grid 
+    display: grid
     grid-template-rows: 380px 380px 380px
     grid-template-columns: 1fr 1fr 1fr
 // setting of img
 .post
+    position: relative
     padding: 10px
 
 .post:nth-child(3),
@@ -35,23 +36,40 @@ img
 
 // panel of searching
 
-.search-panel
+// .search-panel
+//     margin: 0 auto
+//     width: auto
+//     border: 1px solid #000  
+//     min-height: 20px  
+//     display: relative
+ 
+// input[type="search"]  
+//     border: none  
+//     outline: none  
+//     -webkit-appearance: none  
+//     // vertical-align: right 
+ 
+// input[type="submit"]  
+//     // height: auto
+//     display: absolute
+//     border: none
+
+.search
+    display: flex
     margin: 0 auto
-    width: auto
-    border: 1px solid #000  
-    min-height: 20px  
-    display: relative
- 
-input[type="search"]  
-    border: none  
-    outline: none  
-    -webkit-appearance: none  
-    // vertical-align: right 
- 
-input[type="submit"]  
-    // height: auto
-    display: absolute
-    border: none
+    width: 800px
+    height: 30px
+    left: 112px
+    top: 44px
+    margin-top: 10px
+    align-items: center
+    background: #FAFAFA
+
+.search button
+    width: 16px
+    height: 16px
+    background-image: url()
+    
 //end of searching
 
 // h1 text-start
@@ -65,5 +83,20 @@ input[type="submit"]
     line-height: 14px
     font-family: 'Lobster', sans-serif
 
-//   h1 text-end
+
+.rating-mini 
+    position:relative
+    font-size:  0
+.rating-mini span 
+    position: absolute
+    margin: 10px 60px
+    right: 0
+    font-size: 20px
+    line-height: 1
+    color: lightgrey
+.rating-mini > span:before 
+    content: '★ 3.5'
+
+.rating-mini > span.active 
+    color: gold
 
