@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -9,56 +8,33 @@ body {
   background-color: #0F0A29;
 }
 
+svg {
+  margin: 12px 0;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding-top: 100px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-rows: 380px 380px 380px;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.post {
-  position: relative;
-  padding: 10px;
-}
-
-.post:nth-child(3),
-.post:nth-child(4),
-.post:nth-child(5),
-.post:nth-child(6) {
-  text-align: center;
-  padding-top: 180px;
-}
-
-img {
-  border-radius: 10px;
-  width: 380px;
-  height: 380px;
 }
 
 .search {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0 auto;
-  width: 800px;
   height: 30px;
   left: 112px;
   top: 44px;
   margin-top: 10px;
   align-items: center;
   background: #FAFAFA;
+  padding: 9px 10px;
 }
 
 .search button {
-  width: 16px;
-  height: 16px;
   background-image: url(../img/tg_image_1705032903.jpeg);
   background-size: contain;
   border: none;
-  margin-right: 11.2px;
 }
 
 .search input {
@@ -74,33 +50,50 @@ img {
   color: #999999;
 }
 
-.main-text {
-  padding: 10px;
-  width: 500px;
+h1 {
+  padding: 5px;
+}
+
+.title-text {
   margin: 0 auto;
-  background-color: #FF6D64;
-  border-radius: 10px;
-  font-size: 12px;
-  line-height: 14px;
+  height: 24px;
+  width: 400px;
+  left: 412px;
+  top: 10px;
+  border-radius: 0px;
   font-family: "Lobster", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: #FF6D64;
 }
 
-.rating-mini {
-  font-size: 0;
+.grid-container {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-.rating-mini span {
+
+.cinema-card {
+  position: relative;
+}
+
+.score {
+  padding: 10px;
+  display: flex;
   position: absolute;
-  margin: 10px 60px;
+  top: 0;
   right: 0;
-  font-size: 20px;
-  line-height: 1;
-  color: lightgrey;
 }
 
-.rating-mini > span:before {
-  content: "★ 3.5";
-}
-
-.rating-mini > span.active {
-  color: gold;
+.score > p {
+  padding: 5px;
+  color: #FFB800;
+  font-size: 36px;
+  box-shadow: 0px 4px 4x rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=main.css.map */
